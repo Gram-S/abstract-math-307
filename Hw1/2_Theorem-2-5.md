@@ -22,4 +22,4 @@ Therefore, $k = 2i^2$.
 
 Now, observe that $n^2 = 4i^2 = 2 * 2i^2 = 2k$.
 
-Since $n^2$ is equal to $2k$, by *def 2*, $n^2$ is even. 
+Since $n^2$ is equal to $2k$, by *def 2*, $n^2$ is an even integer. 
