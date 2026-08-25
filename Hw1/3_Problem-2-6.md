@@ -4,9 +4,11 @@
 
 *def 3.* An integer $n$ is even if $n = 2k : k \in \Z$.
 
+*axiom 1.* Sums and Products of integers are integers.
+
 **Claim**: The sum of an odd integer $o$ and even integer $e$ is odd.
 
-*axiom 1.* Sums and Products of integers are integers.
+<u>Proof</u>: 
 
 Assume that $o$ is an odd integer and $e$ is an even integer.
 
