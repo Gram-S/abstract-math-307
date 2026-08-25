@@ -15,10 +15,10 @@ Note that $1 \in \Z$, making it an integer by *def 1*.
 
 Now, since both $1$ and $z$ are integers, their sum, $z+1$ is also an integer.
 
-Thus, $z + (z+1)$ must result in an integer.
+Thus, $z + (z+1)$ must be an integer.
 
 We know that $z + z + 1 = 2z + 1$.
 
-From *def 3.*, we know that $2z + 1 = n$, where $n$ is an odd integer.
+From *axiom 1.*, we know that $2z + 1 = n$, where $n$ is an odd integer.
 
 Therefore, the sum of $z$ and $z+1$ must be odd.
