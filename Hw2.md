@@ -61,19 +61,20 @@ Since at least $1$ integer of the pair must be even, assume $n$ to always be eve
 
 Now, from *def 3*, fix some value of $i$ called $i' : n = 2i'$
 
-Then, let $m = 2a + b : a \in \Z, b = 0$ or $1$
+Using *def 3*, fix an even integer $e'$
 
-So, $n * m = 2i'(2a + b) = 2(2ai' + bi')$
+Then, let $m = e'$ or $o$
 
-Since $2, a, b, i' \in \Z$, even for both cases of $b$, by *axiom 1*, the term $(2ai' + bi')$ is an integer.
+So, $n * m = 2i' * m$
 
-Thus, let $i =$ that term. 
+Note that, by *def 2* and *def 3*, $o$ and $e'$ are odd and even integers respectively.
 
-Now $2(2ai' + bi') = 2i = e$
+Since $2, i', m \in \Z$, for both values of $m$, by *axiom 1*, the term $(i'*m)$ is an integer.
 
-Note that, $m$ can either be odd or even, depending on the value of $b$. 
+Thus, let $i = i' * m$ 
+
+Now $2(i' * m) = 2i = e$
 
 Therefore, by *def 3*, the product of a pair of integers is even, if at least $1$ of the pair is even. 
 
 $\blacksquare$
-
