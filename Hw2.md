@@ -34,15 +34,15 @@ $\blacksquare$
 
 Assume $n$ and $m$ are odd integers.
 
-Using *def 2* fix a value of $k$, called integer $j, j' : n = 2j + 1, m = 2j' + 1$
+Using *def 2* fix values of $k$, called integer $k_n, k_m : n = 2k_n + 1, m = 2k_m + 1$
 
-Now, we know $n * m = (2j + 1)(2j' + 1) = 4jj' + 2j + 2j' + 1 = 2(2jj' + j + j') + 1$
+Now, we know $n * m = (2k_n + 1)(2k_m + 1) = 4k_nk_m + 2k_n + 2k_m + 1 = 2(2k_nk_m + k_n + k_m) + 1$
 
-Note that $2$, $j$, and $j'$ are all integers. 
+Note that $2$, $k_n$, and $k_m$ are all integers. 
 
-Thus, by *axiom 1* the term $2jj' + j + j'$, is an integer, so let $k = 2jj' + j + j'$
+Thus, by *axiom 1* the term $2k_nk_m + k_n + k_m$, is an integer, so let $k = 2k_nk_m + k_n + k_m$
 
-Then, $2(2jj' + j + j') + 1 = 2k + 1$
+Then, $2(2k_nk_m + k_n + k_m) + 1 = 2k + 1$
 
 Therefore, $n * m = 2k + 1 = o$
 
