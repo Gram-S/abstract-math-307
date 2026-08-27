@@ -61,15 +61,9 @@ Since at least $1$ integer of the pair must be even, assume $n$ to always be eve
 
 Now, from *def 3*, fix some value of $i$ called $i' : n = 2i'$
 
-Using *def 3*, fix an even integer $e'$
-
-Then, let $m = e'$ or $o$
-
 So, $n * m = 2i' * m$
 
-Note that, by *def 2* and *def 3*, $o$ and $e'$ are odd and even integers respectively.
-
-Since $2, i', m \in \Z$, for both values of $m$, by *axiom 1*, the term $(i'*m)$ is an integer.
+Since $2, i', m \in \Z$, by *axiom 1* and the definition of $m$, the term $(i'*m)$ is an integer.
 
 Thus, let $i = i' * m$ 
 
