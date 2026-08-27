@@ -34,7 +34,7 @@ $\blacksquare$
 
 Assume $n$ and $m$ are odd integers.
 
-Using *def 2* fix values of $k$, called integer $k_n, k_m : n = 2k_n + 1, m = 2k_m + 1$
+Using *def 2* fix values of $k$, called integers $k_n, k_m : n = 2k_n + 1, m = 2k_m + 1$
 
 Now, we know $n * m = (2k_n + 1)(2k_m + 1) = 4k_nk_m + 2k_n + 2k_m + 1 = 2(2k_nk_m + k_n + k_m) + 1$
 
