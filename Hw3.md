@@ -42,7 +42,7 @@ $\blacksquare$
 
 <u>Proof</u>:
 
-Assume that $m \in \Z$ and $6|m$. Now let $m = 6$. Then, $6|6$ is true because of *def 2.11*, where $6 = 6(1)$. However, $4|6$ is false because of *def 2.11*, where $6 = 4k$. We know $k = \frac{6}{4} = \frac{3/2}$. But $\frac{3/2} \notin \Z$ by *def 1.0* and thus $k \neq \frac{3/2}$. Thus, $4$ cannot divide $m = 6$. Therefore, the claim is false since for $m = 6$, then $6|m$ is true but $4|m$ is not.
+Assume that $m \in \Z$ and $6|m$. Now let $m = 6$. Then, $6|6$ is true because of *def 2.11*, where $6 = 6(1)$. However, $4|6$ is false because of *def 2.11*, where $6 = 4k$. We know $k = \frac{6}{4} = \frac{3}{2}$. But $\frac{3}{2} \notin \Z$ by *def 1.0* and thus $k \neq \frac{3}{2}$. Thus, $4$ cannot divide $m = 6$. Therefore, the claim is false since for $m = 6$, then $6|m$ is true but $4|m$ is not.
 
 $\blacksquare$
 
