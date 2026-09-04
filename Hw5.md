@@ -28,7 +28,7 @@ $\blacksquare$
 
 **Claim**: Assume $n,m,a \in \Z$. If $a$ divides $m$ and $a$ divides $n$, then $a$ divides $m - n$.
 
-<u>Proof</u>: Assume that $n,m,a \in \Z$. Also assume that $a$ divides $m$ and $a$ divides $n$. We know that $m + n = m + n$. Since $a$ divides $n$, *Theorem 2.17* shows $a|-n$. Now, since $a$ divides $m$ and $a$ divides $-n$, *Theorem 2.18* implies $a$ must also divide their sum, $m + (-n) = m - n$. Therefore, given $n,m,a \in \Z$, if $a$ divides $m$ and $a$ divides $n$, then $a$ divides $m - n$.
+<u>Proof</u>: Assume that $n,m,a \in \Z$. Also assume that $a$ divides $m$ and $a$ divides $n$. Since $a$ divides $n$, *Theorem 2.17* shows $a|-n$. Now, since $a$ divides $m$ and $a$ divides $-n$, *Theorem 2.18* implies $a$ must also divide their sum, $m + (-n) = m - n$. Therefore, given $n,m,a \in \Z$, if $a$ divides $m$ and $a$ divides $n$, then $a$ divides $m - n$.
 
 $\blacksquare$
 
