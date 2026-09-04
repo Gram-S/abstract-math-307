@@ -56,13 +56,13 @@ $\blacksquare$
 
 <u>Proof</u>:
 
-Assume that $n, m, a \in \Z$. Now there are two cases $a=0, m=0$ and $a \noteq 0, m \noteq 0$.
+Assume that $n, m, a \in \Z$. Now there are two cases $a=0, m=0$ and $a \not= 0, m \not= 0$.
 
 Assume that $a=0, m=0$ and $a|m$. If $a|mn$ then $mn = ak$ is $0n = 0k$, which is always true. Thus, if $a=0, m=0$ and $a|m$, then $a|mn$. Therefore, the claim is true for this case.
 
-Assume that  $a \noteq 0, m \noteq 0$ and $a|m$. Since $a|m$, using *def 2.11*, fix a nonzero integer value of $k$ called $k'$ so that $m = ak'$. Since $m$ cannot be $0$, $k'$ cannot be $0$. Note that both $k'$ and $n$ are integers, so by *def 2.11*, let $k = nk'$. We know that, if $a|mn$, then $mn = ak = ank'$. Since $k$ cannot be $0$, $n$ cannot be $0$, thus, we can divide $n$ on both sides of this equation and it will remain true, so $m = ak'$. So, there must be some value of $k$ that makes this equation true. Thus, $a|mn$ is true. Therefore, if $a|m$ when $a \noteq 0, m \noteq 0$, then $a|mn$.
+Assume that  $a \not= 0, m \not= 0$ and $a|m$. Since $a|m$, using *def 2.11*, fix a nonzero integer value of $k$ called $k'$ so that $m = ak'$. Since $m$ cannot be $0$, $k'$ cannot be $0$. Note that both $k'$ and $n$ are integers, so by *def 2.11*, let $k = nk'$. We know that, if $a|mn$, then $mn = ak = ank'$. Since $k$ cannot be $0$, $n$ cannot be $0$, thus, we can divide $n$ on both sides of this equation and it will remain true, so $m = ak'$. So, there must be some value of $k$ that makes this equation true. Thus, $a|mn$ is true. Therefore, if $a|m$ when $a \not= 0, m \not= 0$, then $a|mn$.
 
-Since the claim is true for both $a=0, m=0$ and $a \noteq 0, m \noteq 0$, the claim is true for all $n, m, a \in \Z$. 
+Since the claim is true for both $a=0, m=0$ and $a \not= 0, m \not= 0$, the claim is true for all $n, m, a \in \Z$. 
 
 $\blacksquare$
 

@@ -25,7 +25,7 @@ $\blacksquare$
 
 **Claim**: If $n, m \in \Z$ and $n|m$, then $n|-m$.
 
-<u>Proof</u>: Assume that $n, m \in \Z$ and $n|m$. Since $n|m$, by *def 2.11* fix an integer value of $k$ called $k'$ so that $m = nk'$. We can multiply both sides of the equation by $-1$ to get $-m = -nk'$. By *fact 2.3.2*, we know the product of $k'$ and $-1$ is an integer, so let $k = -k'$. Now $-m = nk$, and thus, by *def 2.11*, $n|-m$. Therefore, if $n, m \in \Z$ and $n|m$, then $n|-m$.
+<u>Proof</u>: Assume that $n, m \in \Z$ and $n|m$. Since $n|m$, by *def 2.11* there exists $k' \in \Z : m = nk'$. We can multiply both sides of the equation by $-1$ to get $-m = -nk'$. By *fact 2.3.2*, we know the product of $k'$ and $-1$ is an integer, so let $k = -k'$. Now $-m = nk$, and thus, by *def 2.11*, $n|-m$. Therefore, if $n, m \in \Z$ and $n|m$, then $n|-m$.
 
 $\blacksquare$
 
