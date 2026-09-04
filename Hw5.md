@@ -40,7 +40,7 @@ $\blacksquare$
 
 **Claim**: Given $a, b, m \in \Z$, the following statement is always true. If $ab$ divides $m$, then $a$ divides $m$ and $b$ divides $m$. 
 
-<u>Proof</u>: Assume $a, b, m \in \Z$ and $ab$ divides $m$. Since $ab$ divides $m$, by *Def 2.11* there exists $k_1 \in \Z : m = abk_1$. If $a$ divides $m$, then by *Def 2.11* there also exists $k_2 \in \Z : m = ak_2$. Now, *Fact 2.3.2* tells us that the product of $k_1$ and $b$ is an integer. Since $m = abk_1$, we know if $k_2 = bk_1$, then $m = ak_2$ is true. Thus, by *Def 2.11*, $a$ divides $m$. A symmetrical proof exists if we say that, by *Def 2.11* there exists $k_3 \in \Z : m = bk_3$. Therefore, given $a, b, m \in \Z$ and $ab$ divides $m$, then it is always the case that,  $a$ divides $m$ and $b$ divides $m$.
+<u>Proof</u>: Assume $a, b, m \in \Z$ and $ab$ divides $m$. Since $ab$ divides $m$, by *Def 2.11* there exists $k_1 \in \Z : m = abk_1$. If $a$ divides $m$, then by *Def 2.11* there also exists $k_2 \in \Z : m = ak_2$. Now, *Fact 2.3.2* tells us that the product of $k_1$ and $b$ is an integer. Since $m = abk_1$, we know if $k_2 = bk_1$, then $m = ak_2$ is true. Thus, by *Def 2.11*, $a$ divides $m$. Note a symmetrical proof exists if we say that, by *Def 2.11* there exists $k_3 \in \Z : m = bk_3$. Therefore, given $a, b, m \in \Z$ and $ab$ divides $m$, then it is always the case that,  $a$ divides $m$ and $b$ divides $m$.
 
 $\blacksquare$
 
