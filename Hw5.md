@@ -14,7 +14,7 @@
 
 ### Theorem 2.18
 
-**Claim**: Assume $n,m,a \in \Z$. If $a$ divides $m$ and $a$ divides $n$, then $a$ divides $m + n$.
+**Theorem**: Assume $n,m,a \in \Z$. If $a$ divides $m$ and $a$ divides $n$, then $a$ divides $m + n$.
 
 <u>Proof</u>: Assume that $n,m,a \in \Z$. Also assume that $a$ divides $m$ and $a$ divides $n$. We know that $m + n = m + n$. Since $a$ divides $m$, by *Def 2.11*, there exists $k_m \in \Z : m = ak_m$. We also know that since $a$ divides $n$, by *Def 2.11*, there exists $k_n \in \Z : n = ak_n$. Hence, $m + n = ak_m + ak_n = a(k_n + k_m)$. Since $k_n$ and $k_m$ are integers, by *Fact 2.3.2*, their sum is an integer, so let $k = k_n + k_m$. Thus, $m + n = ak$, so by *Def 2.11*, $a$ divides $n + m$. Therefore, given $n,m,a \in \Z$, if $a$ divides $m$ and $a$ divides $n$, then $a$ divides $m + n$. 
 
@@ -26,9 +26,9 @@ $\blacksquare$
 
 ### Theorem 2.19
 
-**Claim**: Assume $n,m,a \in \Z$. If $a$ divides $m$ and $a$ divides $n$, then $a$ divides $m - n$.
+**Theorem**: Assume $n,m,a \in \Z$. If $a$ divides $m$ and $a$ divides $n$, then $a$ divides $m - n$.
 
-<u>Proof</u>: Assume that $n,m,a \in \Z$. Also assume that $a$ divides $m$ and $a$ divides $n$. Since $a$ divides $n$, *Theorem 2.17* shows $a|-n$. Now, since $a$ divides $m$ and $a$ divides $-n$, *Theorem 2.18* implies $a$ must also divide their sum, $m + (-n) = m - n$. Therefore, given $n,m,a \in \Z$, if $a$ divides $m$ and $a$ divides $n$, then $a$ divides $m - n$.
+<u>Proof</u>: Assume that $n,m,a \in \Z$. Also assume that $a$ divides $m$ and $a$ divides $n$. Since $a$ divides $n$, *Theorem 2.17* shows $a|-n$. Now, *Theorem 2.18* implies $a$ must also divide their sum, $m + (-n) = m - n$. Therefore, given $n,m,a \in \Z$, if $a$ divides $m$ and $a$ divides $n$, then $a$ divides $m - n$.
 
 $\blacksquare$
 
