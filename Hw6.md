@@ -93,7 +93,7 @@ $6$ is an even number if $6$ is a multiple of $4$.
 
 **What’s the difference between “A =⇒ B” and “A ⇐⇒ B”?**
 
-In $A \if B$, the state of A (true or false) is only reliant on the state of $B$. That is, for a fixed state of $B$, we can deduce the value of $A$ by either $A = B$ or ¬$A = B$ depending on their relationship. However, if we have a fixed state of $A$, we cannot deduce $B$. This is not the same for $A \iff B$, if we know one value, we can always deduce the other in the same manner.
+In $A \Rightarrow B$, the state of A (true or false) is only reliant on the state of $B$. That is, for a fixed state of $B$, we can deduce the value of $A$ by either $A = B$ or ¬$A = B$ depending on their relationship. However, if we have a fixed state of $A$, we cannot deduce $B$. This is not the same for $A \iff B$, if we know one value, we can always deduce the other in the same manner.
 
 **Can you give an example statements A, B where A =⇒ B is true but A ⇐⇒ B is false?**
 
@@ -107,7 +107,7 @@ An object will fall if and only if gravity is true. This statement is false beca
 
 **Can you give an example of two statements A, B where A ⇐⇒ B is true but A =⇒ B is false?**
 
-No. Because if $A \iff B$ then $A \if B$ is implied. Recall the definition of $\iff$, you can derive $A$ if $B$ is known.
+No. Because if $A \iff B$ then $A \Rightarrow B$ is implied. Recall the definition of $\iff$, you can derive $A$ if $B$ is known.
 
 
 
@@ -127,7 +127,7 @@ $$
 n^3 = (2j + 1)^3 = (4j^2 + 4j + 1)(2j + 1) = 8j^3 + 4j^2 + 8j^2 + 4j + 2j + 1 = 2(4j^3 + 2j^2 + 4j^2 + 2j + j) + 1.
 $$
 
-By *Fact 2.3.2*, we know that the following term is an integer, so let $k = 4j^3 + 2j^2 + 4j^2 + 2j + j$. Hence, $n^3 = 2k + 1$ and thus is an odd integer. Therefore, since $n$ is an odd integer $\if$ $n^3$ is an odd integer.
+By *Fact 2.3.2*, we know that the following term is an integer, so let $k = 4j^3 + 2j^2 + 4j^2 + 2j + j$. Hence, $n^3 = 2k + 1$ and thus is an odd integer. Therefore, since $n$ is an odd integer $\Rightarrow$ $n^3$ is an odd integer.
 
 
 
