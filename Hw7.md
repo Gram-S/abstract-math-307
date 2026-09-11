@@ -3,6 +3,7 @@
 
 Assume $a, b$ are integers and $a|b$. Because of *Def 2.11*, we know that $b = ak$. Now *Fact 2.3.2* implies there exists some values of $k$ so that $k = ak_1, k_2 = bk_1$. We can then multiply both sides of $b = ak$ by $b$. Now
 
+<!-- I suspect that $k_1$ will always be =1 because I've done some traces with 2|4.-->
 $$
 b^2 = ak(b) = a(ak_1)b = a^2k_1b = a^2k_2. 
 $$
@@ -14,23 +15,36 @@ Then, by *Def 2.11*, we know $a^2|b^2$. Therefore, if $a, b$ are integers and $a
 ### Exercise 3.11
 *Give at least two equivalent ways to say $A \iff B$ using the words "necessary" and/or "sufficient".*
 
-- Propositions are binary, so let a proposition $=1$ if it is true and $0$ otherwise. Then $A = B$.
-- Given $A$ to be true, then $B$ is true. Given $A$ to be false, then $B$ is false. Given $B$ to be true, then $A$ is true. Given $B$ to be false, then $A$ is false. 
+- This definition is sufficient. Let a proposition $=1$ if it is true and $0$ otherwise. Then $A = B$.
+- Given $A$ to be true, then it is necessary $B$ is true. Given $A$ to be false, then it is necessary $B$ is false. Given $B$ to be true, then it is necessary $A$ is true. Given $B$ to be false, then it is necessary $A$ is false. 
 
 
 
 ### Theorem 3.12 
 *For any propositions $A, B$, the statement "$A \iff B$" is equivalent to the statement “$(A \Rightarrow B) \wedge (B \Rightarrow A)$”*
 
-Assign a lowercase value $a, b$ to each proposition respectively. Since propositions are either true or false, let a value $=1$ if their respective proposition is true and $0$ otherwise. Now, by the definition of $\iff$, we know $a = b$. Now, without the loss of generality, imagine $a$ is either $1$ or $0$. If $A \Rightarrow B$, then $b$ must be the same value as $a$. So, if $A \iff B$, then $b$ is always equal to $a$ if $A \iff B$, because $a = b$. Therefore, $A \iff B$ implies both $(A \Rightarrow B) \wedge (B \Rightarrow A)$. 
-
+Assume that for propositions $A, B$, we have $(A \Rightarrow B) \wedge (B \Rightarrow A)$. Assign a value $a, b$ to $A, B$ respectively. Let a value $=1$ if their respective proposition is true and $=0$ otherwise. Now, without the loss of generality, there are two cases. When $a = 1$, we know that $b = 1$ because $A \Rightarrow B$. However, when $a = 0$, we know $b /not= 1$, because if $b = 1$, then $a$ must equal $1$ since $B \Rightarrow A$, which is not true for this case. Thus, $b$ must be $0$. So in both cases, $a = b$. Notice that, the definition of $\iff$ also implies $a = b$. Therefore, since both of these statements can be expressed as $a = b$, the statement "$A \iff B$" is equivalent to the “$(A \Rightarrow B) \wedge (B \Rightarrow A)$”. 
 
 
 
 ### Question 3.14
 *Can you think of any other ways to approach a proof of the form $A \iff B$? Write a skeleton proof for your strategies.*
 
-It seems you can have a series of operations that prove it both ways. Consider the claim $2x = 4 \iff x = 4$. Well, we can divide both sides by $2$ and show that $x = 2$. I think this satisfies both directions of the conditional because it shows that $2x = 4$ if $x = 2$ and if $x = 2$ then $2x = 4$. Because the way you show the former is by algebra and the way you show the latter is by plugging $2$ into the equation. But for a single value, I think solving it algebraically implies it works for plugging the value in. 
+Proof:
+
+Assume $A$.
+
+Derive $B$ from definitions and known results.
+
+Therefore, $A \Rightarrow B$.
+
+Now assume $B$.
+
+Derive $A$ from known results and definitions.
+
+Therefore, $A \Rightarrow B$.
+
+Thus, since $A \Rightarrow B$ and $B \Rightarrow A$, by *Def 3.3*, we know $A \iff B$. 
 
 
 
