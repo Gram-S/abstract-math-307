@@ -40,6 +40,28 @@ $\blacksquare$
 ### Question 3.14
 *Can you think of any other ways to approach a proof of the form $A \iff B$? Write a skeleton proof for your strategies.*
 
+*Proof*
+
+Assume $A$.
+
+Derive $B$ from definitions and known results.
+
+Therefore, $B$ is true.
+
+Now assume not $A$.
+
+Derive not $B$ from known results and definitions.
+
+Therefore, $B$ is false.
+
+Thus, $A$ and $B$ have the same truth value and by *Def. 3.3*, then $A \iff B$.
+
+$\blacksquare$
+
+<div style="break-after: page;"></div>
+
+Could also be done as:
+
 *Proof*.
 
 Assume $A$.
@@ -59,6 +81,7 @@ Thus, since $A \Rightarrow B$ and $B \Rightarrow A$, by *Def 3.3*, we know $A \i
 $\blacksquare$
 
 <div style="break-after: page;"></div>
+
 
 
 ### Theorem 3.16
