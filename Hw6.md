@@ -1,3 +1,5 @@
+Grant Smith, Elisha Doty
+
 ### Exercise 3.2
 **Determine if the following are propositions or not.**
 
