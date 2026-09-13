@@ -1,30 +1,3 @@
-### Theorem 3.10 
-*If $a, b$ are integers and $a|b$, then $a^2|b^2$.*
-
-*Proof.*
-
-Assume $a, b$ are integers and $a|b$. Because of *Def 2.11*, we know that $b = ak$. Now *Fact 2.3.2* implies there exists some values of $k$ so that $k = ak_1, k_2 = bk_1$. We can then multiply both sides of $b = ak$ by $b$. Now
-
-<!-- I suspect that $k_1$ will always be =1 because I've done some traces with 2|4.-->
-$$
-b^2 = ak(b) = a(ak_1)b = a^2k_1b = a^2k_2. 
-$$
-
-Then, by *Def 2.11*, we know $a^2|b^2$. Therefore, if $a, b$ are integers and $a|b$, then $a^2|b^2$.
-
-$\blacksquare$
-
-<div style="break-after: page;"></div>
-
-
-### Exercise 3.11
-*Give at least two equivalent ways to say $A \iff B$ using the words "necessary" and/or "sufficient".*
-
-- This definition is sufficient. Let a proposition $=1$ if it is true and $0$ otherwise. Then $A = B$.
-- Given $A$ to be true, then it is necessary $B$ is true. Given $A$ to be false, then it is necessary $B$ is false. Given $B$ to be true, then it is necessary $A$ is true. Given $B$ to be false, then it is necessary $A$ is false. 
-
-
-
 ### Theorem 3.12 
 *For any propositions $A, B$, the statement "$A \iff B$" is equivalent to the statement “$(A \Rightarrow B) \wedge (B \Rightarrow A)$”*
 
@@ -36,55 +9,7 @@ $\blacksquare$
 
 <div style="break-after: page;"></div>
 
-
-### Question 3.14
-*Can you think of any other ways to approach a proof of the form $A \iff B$? Write a skeleton proof for your strategies.*
-
-*Proof*
-
-Assume $A$.
-
-Derive $B$ from definitions and known results.
-
-Therefore, $B$ is true.
-
-Now assume not $A$.
-
-Derive not $B$ from known results and definitions.
-
-Therefore, $B$ is false.
-
-Thus, $A$ and $B$ have the same truth value and by *Def. 3.3*, then $A \iff B$.
-
-$\blacksquare$
-
-<div style="break-after: page;"></div>
-
-Could also be done as:
-
-*Proof*.
-
-Assume $A$.
-
-Derive $B$ from definitions and known results.
-
-Therefore, $A \Rightarrow B$.
-
-Now assume $B$.
-
-Derive $A$ from known results and definitions.
-
-Therefore, $A \Rightarrow B$.
-
-Thus, since $A \Rightarrow B$ and $B \Rightarrow A$, by *Def 3.3*, we know $A \iff B$. 
-
-$\blacksquare$
-
-<div style="break-after: page;"></div>
-
-
-
-### Theorem 3.17
+### Theorem 3.16
 *Assume $x \in \R$. Then $ (x^2 = x) \iff (x = 0 \text{ or } x = 1)$.*
 
 <!-- Need to use 'if' instead of the arrow this time. -->
@@ -106,3 +31,4 @@ We have now shown both $(x^2 = x) \Leftarrow (x = 0 \text{ or } x = 1)$ and $(x^
 $\blacksquare$
 
 <div style="break-after: page;"></div>
+
