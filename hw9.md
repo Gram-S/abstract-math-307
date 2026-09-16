@@ -6,16 +6,17 @@
 
 *Proof*.
 
-Assume that $x \in \R$.
+Assume $x^3 - 1 \gt 0$. 
 
-$\Rightarrow$ Assume that $x^3 - 1 > 0$. We know that $x^3 - 1 = (x-1)(x^2+x+1)$ and $x^2+x+1 = (x+1/2)^2+3/4$. Any term squared must be positive and $3/4$ is positive, so $(x+1/2)^2+3/4$ is always positive. Thus, the left side of the assumed inequality is only $0$ or negative when $x$ is 0 or negative respectively. Thus, $x^3 -1 \gt 0$ is only true when 
+$\Rightarrow$ We know that $x^3-1 = (x-1)(x^2+x+1)$ and $x^2+x+1 = (x + \frac{1}{2})^2 + \frac{3}{4}$. Notice that $(x + \frac{1}{2})^2$ cannot be negative because it is squared. Thus, $(x + \frac{1}{2})^2 + \frac{3}{4}$ has an inclusive lower bound of $\frac{3}{4}$. Now in order for $(x-1)(x^2+x+1) \gt 0$ to be true, $x-1 \gt 0$ must be true, as it is the product with a positive. Thus, $x^3 - 1$ implies $x \gt 1$.
 
-$\Leftarrow$ Assume that $x \gt 1$. Take the cube of both sides of the inequality and then subtract $1$ from each side. This results in $x^3 - 1 \gt 0$. Thus, $x^3 - 1 > 0 \Leftarrow x \gt 1$. 
+$\Leftarrow$ Assume that $x \gt 1$. Cube both sides of the inequality, then subtract $1$ from both sides to get $x^3 - 1 \gt 0$. Thus, $x^3 - 1 > 0 \Leftarrow x \gt 1$. 
+
+We have shown both $x^3 - 1 > 0 \Rightarrow x \gt 1$ and  $x^3 - 1 > 0 \Leftarrow x \gt 1$. Therefore, by **Theorem 3.12** $x^3 - 1 > 0 \iff x \gt 1$. 
 
 
 
 
-*Assume $x \in \R$. Then $x^3 - 1 > 0 \iff x \gt 1$.*
 
 *Proof*.
 
