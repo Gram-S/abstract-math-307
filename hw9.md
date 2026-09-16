@@ -6,6 +6,19 @@
 
 *Proof*.
 
+Assume that $x \in \R$.
+
+$\Rightarrow$ Assume that $x^3 - 1 > 0$. We know that $x^3 - 1 = (x-1)(x^2+x+1)$ and $x^2+x+1 = (x+1/2)^2+3/4$. Any term squared must be positive and $3/4$ is positive, so $(x+1/2)^2+3/4$ is always positive. Thus, the left side of the assumed inequality is only $0$ or negative when $x$ is 0 or negative respectively. Thus, $x^3 -1 \gt 0$ is only true when 
+
+$\Leftarrow$ Assume that $x \gt 1$. Take the cube of both sides of the inequality and then subtract $1$ from each side. This results in $x^3 - 1 \gt 0$. Thus, $x^3 - 1 > 0 \Leftarrow x \gt 1$. 
+
+
+
+
+*Assume $x \in \R$. Then $x^3 - 1 > 0 \iff x \gt 1$.*
+
+*Proof*.
+
 Assume $x \in \R$. We use $x^3 - 1 > 0$ to state the inequality $x^3 > 1$, which has two possibilities for $x$. Either $x \leq 1$ or $x \gt 1$. 
 
 First assume that $x \leq 1$. If $x = 0, 1$, then $x^3 = 0, 1$, which makes the stated inequality false. Then, $x$ can either be a decimal in the range $(0, 1)$ or a negative number. If $x$ is a decimal, then $x^3$ cannot exceed $1$ as multiplication by a number in the range $0, 1$ cannot increase the function. If $x$ is negative, then $x^3$ is negative. So in both cases, the stated inequality is false. Therefore, the $x^3 > 1$ is false for all $x \leq 1$.
