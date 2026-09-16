@@ -1,7 +1,5 @@
 **Def 3.22.** Two statements $A$ and $B$ are (logically) equivalent, expressed symbolically as $A \iff B$, if and only if they have the same truth table. 
 
-
-
 ### Theorem 3.16
 
 *Assume $x \in \R$. Then $x^3 - 1 > 0 \iff x \gt 1$.*
@@ -31,17 +29,15 @@ $\blacksquare$
 
 <!-- Need to use 'if' instead of the arrow this time. -->
 
-*Proof*.
-
 First we show that $(x^2 = x) \Rightarrow (x = 0 \text{ or } x = 1)$. Assume $x \in \R$. Now there are two cases, $x = 0$ and $x \not= 0$. 
 
 Let $x = 0$, then $0^2 = 0$ is true, so $(x^2 = x) \Rightarrow (x = 0)$ is also true assuming $x$ can only be $0$. <!-- This works because it is ONLY for the case x = 0. It does not affect the other case. I believe this is if and only if too. -->
 
 Let $x \in \R$ but $x \not= 0$, then we can divide each side of $x^2 = x$ by $x$. Then, $x = 1$, so $x^2 = x$ for some nonzero $x \in \R$, so $(x^2 = x) \Rightarrow (x = 1)$. 
 
-Since the statements $(x^2 = x)$ and $(x = 0 \text{ or } x = 1$ is true in both cases, we can say that $(x^2 = x) \Rightarrow (x = 0 \text{ or } x = 1)$.
+Since the statements $(x^2 = x)$ and $(x = 0 \text{ or } x = 1)$ is true in both cases, we can say that $(x^2 = x) \Rightarrow (x = 0 \text{ or } x = 1)$.
 
-Now, we show that $(x^2 = x) \Rightarrow (x = 0 \text{ or } x = 1)$. We have already showed this naively for $x = 0$ above, so just consider $x = 1$, then $1^2 = 1$, so $(x = 1) \Rightarrow (x^2 = x)$.
+Now, we show that $(x^2 = x) \Leftarrow (x = 0 \text{ or } x = 1)$. We have already showed this naively for $x = 0$ above, so just consider $x = 1$, then $1^2 = 1$, so $(x = 1) \Rightarrow (x^2 = x)$.
 
 We have now shown both $(x^2 = x) \Leftarrow (x = 0 \text{ or } x = 1)$ and $(x^2 = x) \Rightarrow (x = 0 \text{ or } x = 1)$ are true for $x \in \R$. Therefore, by *Theorem 3.12*, we have proved $ (x^2 = x) \iff (x = 0 \text{ or } x = 1)$. 
 
@@ -74,7 +70,7 @@ The only time the promise is false (a lie), is if the players win but they are n
 
 <!-- There's some definition here -->
 
-Assume that $A$ and $B$ are propositions. We know from **Def 3.4.b** that $(A  \wedge B)$ is only true when both $A$ and $B$ are true. Thus, its inverse is only false when both $A$ and $B$ are true. Now observe that $\lnot A \vee \lnot B$ is false only if both $A$ and $B$ are true. Otherwise, one would be inverted and make the statement true. Note that **Def 3.1** tells us that propositions can only be true or false. So if the statements are false at the same times, then they must then be true at the same times. Thus, their truth tables are equal and by **Def 3.22**, $\lnot (A  \wedge B) \iff \lnot A \vee \lnot B$. Therefore, if $A$ and $B$, then $\lnot (A  \wedge B) \iff \lnot A \vee \lnot B$.
+Assume that $A$ and $B$ are propositions. We know from **Def 3.4.b** that $(A  \wedge B)$ is only true when both $A$ and $B$ are true. Thus, its negation is only false when both $A$ and $B$ are true. Now observe that $\lnot A \vee \lnot B$ is false only if both $A$ and $B$ are true. Otherwise, one would be inverted and make the statement true. Note that **Def 3.1** tells us that propositions can only be true or false. So if the statements are false at the same times, then they must then be true at the same times. Thus, their truth tables are equal and by **Def 3.22**, $\lnot (A  \wedge B) \iff \lnot A \vee \lnot B$. Therefore, if $A$ and $B$ are propositions, then $\lnot (A  \wedge B) \iff \lnot A \vee \lnot B$.
 
 $\blacksquare$
 
@@ -87,7 +83,7 @@ $\blacksquare$
 
 **Theorem 3.25.** *If $A$ and $B$ are propositions, then $\lnot(A \vee B) \iff (\lnot A \wedge \lnot B)$*.
 
-Assume that $A$ and $B$ are propositions. We know from **Def 3.4** that $(A \vee B)$ is only false when both $A$ and $B$ are false. Thus, its inverse is only true when both $A$ and $B$ are false. Now observe that $(\lnot A \wedge \lnot B)$ is true only if $A$ and $B$ are false, because they will be inverted. Note that **Def 3.1** tells us that propositions can only be true or false. So if the statements are false at the same times, then they must then be true at the same times. Thus, their truth tables are equal, so by **Def 3.22**, then $\lnot(A \vee B) \iff (\lnot A \wedge \lnot B)$. Therefore, If $A$ and $B$ are propositions, then $\lnot(A \vee B) \iff (\lnot A \wedge \lnot B)$. 
+Assume that $A$ and $B$ are propositions. We know from **Def 3.4** that $(A \vee B)$ is only false when both $A$ and $B$ are false. Thus, its negation is only true when both $A$ and $B$ are false. Now observe that $(\lnot A \wedge \lnot B)$ is true only if $A$ and $B$ are false, because they will be inverted. Note that **Def 3.1** tells us that propositions can only be true or false. So if the statements are false at the same times, then they must then be true at the same times. Thus, their truth tables are equal, so by **Def 3.22**, then $\lnot(A \vee B) \iff (\lnot A \wedge \lnot B)$. Therefore, If $A$ and $B$ are propositions, then $\lnot(A \vee B) \iff (\lnot A \wedge \lnot B)$. 
 
 $\blacksquare$
 
@@ -98,11 +94,11 @@ $\blacksquare$
 ### Problem 3.26
 *Rephrase $\lnot(A \Rightarrow B)$ using $\wedge$ or $\vee$. (Hint: Think about when $A \Rightarrow B$ is false.) Explain why $\lnot (A \Rightarrow B)$ is not an implication.*
 
-| $A$ | $B$ | $A \Rightarrow B$ | new: $A \wedge \lnot B$
+| $A$ | $B$ | \lnot $A \Rightarrow B$ | new: $A \wedge \lnot B$
 | --- | --- | --- | --- |
-| T   | T   | T   | F
-| T   | F   | F   | T
-| F   | T   | T   | F
-| F   | F   | T   | F
+| T   | T   | F   | F
+| T   | F   | T   | T
+| F   | T   | F   | F
+| F   | F   | F   | F
 
 We propose that $\lnot (A \Rightarrow B)$ is not an implication because the cases where $A$ is false do not tell us anything about $B$. So the statement may not be actually true in those cases.  
