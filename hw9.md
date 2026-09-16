@@ -8,11 +8,11 @@
 
 Assume $x^3 - 1 \gt 0$. 
 
-$\Rightarrow$ We know that $x^3-1 = (x-1)(x^2+x+1)$ and $x^2+x+1 = (x + \frac{1}{2})^2 + \frac{3}{4}$. Notice that $(x + \frac{1}{2})^2$ cannot be negative because it is squared. Thus, $(x + \frac{1}{2})^2 + \frac{3}{4}$ has an inclusive lower bound of $\frac{3}{4}$. Now  $(x-1)(x^2+x+1) \gt 0$ is only true, $x-1 \gt 0$ when is true, and they are both false otherwise. Thus, $x^3 - 1$ implies $x \gt 1$.
+$\implies$ We know that $x^3-1 = (x-1)(x^2+x+1)$ and $x^2+x+1 = (x + \frac{1}{2})^2 + \frac{3}{4}$. Notice that $(x + \frac{1}{2})^2$ cannot be negative because it is squared. Thus, $(x + \frac{1}{2})^2 + \frac{3}{4}$ has an inclusive lower bound of $\frac{3}{4}$. Now  $(x-1)(x^2+x+1) \gt 0$ is only true, $x-1 \gt 0$ when is true, and they are both false otherwise. Thus, $x^3 - 1$ implies $x \gt 1$.
 
-$\Leftarrow$ Assume that $x \gt 1$. Cube both sides of the inequality, then subtract $1$ from both sides to get $x^3 - 1 \gt 0$. Thus, $x^3 - 1 > 0 \Leftarrow x \gt 1$. 
+$\impliedby$ Assume that $x \gt 1$. Cube both sides of the inequality, then subtract $1$ from both sides to get $x^3 - 1 \gt 0$. Thus, $x^3 - 1 > 0 \impliedby x \gt 1$. 
 
-We have shown both $x^3 - 1 > 0 \Rightarrow x \gt 1$ and  $x^3 - 1 > 0 \Leftarrow x \gt 1$. Therefore, by **Theorem 3.12** $x^3 - 1 > 0 \iff x \gt 1$. 
+We have shown both $x^3 - 1 > 0 \implies x \gt 1$ and  $x^3 - 1 > 0 \impliedby x \gt 1$. Therefore, by **Theorem 3.12** $x^3 - 1 > 0 \iff x \gt 1$. 
 
 $\blacksquare$
 
@@ -21,25 +21,23 @@ $\blacksquare$
 
 
 ### Theorem 3.17 
-*Let $x$ be a real number. Then $x^2 = x \iff x = 0 \text{ or } x = 1$*
+*Let $x$ be a real number. Then $x^2 = x \iff x = 0 \text{ or } x = 1$.*
 
 *Proof.*
 
-*Assume $x \in \R$. Then $ (x^2 = x) \iff (x = 0 \text{ or } x = 1)$.*
+*Assume $x \in \R$.*
 
 <!-- Need to use 'if' instead of the arrow this time. -->
 
-First we show that $(x^2 = x) \Rightarrow (x = 0 \text{ or } x = 1)$. Assume $x \in \R$. Now there are two cases, $x = 0$ and $x \not= 0$. 
+First we show that $(x^2 = x) \implies (x = 0 \text{ or } x = 1)$. Assume $x \in \R$. Now there are two cases, $x = 0$ and $x \not= 0$. 
 
-Let $x = 0$, then $0^2 = 0$ is true, so $(x^2 = x) \Rightarrow (x = 0)$ is also true assuming $x$ can only be $0$. <!-- This works because it is ONLY for the case x = 0. It does not affect the other case. I believe this is if and only if too. -->
+Let $x = 0$. Then $0^2 = 0$ is true, so $(x^2 = x) \implies (x = 0)$ is also true assuming $x$ can only be $0$. <!-- This works because it is ONLY for the case x = 0. It does not affect the other case. I believe this is if and only if too. -->
 
-Let $x \in \R$ but $x \not= 0$, then we can divide each side of $x^2 = x$ by $x$. Then, $x = 1$, so $x^2 = x$ for some nonzero $x \in \R$, so $(x^2 = x) \Rightarrow (x = 1)$. 
+Let $x \in \R$ but $x \not= 0$, then we can divide each side of $x^2 = x$ by $x$. Then, $x = 1$, so $x^2 = x$ for some nonzero $x \in \R$, so $(x^2 = x) \implies (x = 1)$. 
 
-Since the statements $(x^2 = x)$ and $(x = 0 \text{ or } x = 1)$ is true in both cases, we can say that $(x^2 = x) \Rightarrow (x = 0 \text{ or } x = 1)$.
+Now, we show that $(x^2 = x) \impliedby (x = 0 \text{ or } x = 1)$. We have already showed this naively for $x = 0$ above, so just consider $x = 1$, then $1^2 = 1$, so $(x = 1) \implies (x^2 = x)$.
 
-Now, we show that $(x^2 = x) \Leftarrow (x = 0 \text{ or } x = 1)$. We have already showed this naively for $x = 0$ above, so just consider $x = 1$, then $1^2 = 1$, so $(x = 1) \Rightarrow (x^2 = x)$.
-
-We have now shown both $(x^2 = x) \Leftarrow (x = 0 \text{ or } x = 1)$ and $(x^2 = x) \Rightarrow (x = 0 \text{ or } x = 1)$ are true for $x \in \R$. Therefore, by *Theorem 3.12*, we have proved $ (x^2 = x) \iff (x = 0 \text{ or } x = 1)$. 
+We have now shown both $(x^2 = x) \impliedby (x = 0 \text{ or } x = 1)$ and $(x^2 = x) \implies (x = 0 \text{ or } x = 1)$ are true for $x \in \R$. Therefore, by *Theorem 3.12*, we have proved $ (x^2 = x) \iff (x = 0 \text{ or } x = 1)$. 
 
 $\blacksquare$
 
@@ -48,11 +46,11 @@ $\blacksquare$
 
 
 ### Problem 3.21
-*A coach promises, “If we win tonight, then I will buy you pizza tomorrow.” Determine the case(s) in which the players can rightly claim to have been lied to. Use this to help create a truth table for the proposition $A \Rightarrow B$.*
+*A coach promises, “If we win tonight, then I will buy you pizza tomorrow.” Determine the case(s) in which the players can rightly claim to have been lied to. Use this to help create a truth table for the proposition $A \implies B$.*
 
-The only time the promise is false (a lie), is if the players win but they are not bought pizza tomorrow. In that case, $A \Rightarrow B$ is false because $A$ is true but $B$ is false.
+The only time the promise is false (a lie), is if the players win but they are not bought pizza tomorrow. In that case, $A \implies B$ is false because $A$ is true but $B$ is false.
 
-| $A$ | $B$ | $A \Rightarrow B$ |
+| $A$ | $B$ | $A \implies B$ |
 | --- | --- | --- |
 | T   | T   | T
 | T   | F   | F
@@ -92,13 +90,13 @@ $\blacksquare$
 
 
 ### Problem 3.26
-*Rephrase $\lnot(A \Rightarrow B)$ using $\wedge$ or $\vee$. (Hint: Think about when $A \Rightarrow B$ is false.) Explain why $\lnot (A \Rightarrow B)$ is not an implication.*
+*Rephrase $\lnot(A \implies B)$ using $\wedge$ or $\vee$. (Hint: Think about when $A \implies B$ is false.) Explain why $\lnot (A \implies B)$ is not an implication.*
 
-| $A$ | $B$ | \lnot $A \Rightarrow B$ | new: $A \wedge \lnot B$
+| $A$ | $B$ | \lnot $A \implies B$ | new: $A \wedge \lnot B$
 | --- | --- | --- | --- |
 | T   | T   | F   | F
 | T   | F   | T   | T
 | F   | T   | F   | F
 | F   | F   | F   | F
 
-We propose that $\lnot (A \Rightarrow B)$ is not an implication because the cases where $A$ is false do not tell us anything about $B$. So the statement may not be actually true in those cases.  
+We propose that $\lnot (A \implies B)$ is not an implication because the cases where $A$ is false do not tell us anything about $B$. So the statement may not be actually true in those cases.  
