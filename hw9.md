@@ -8,26 +8,11 @@
 
 Assume $x^3 - 1 \gt 0$. 
 
-$\Rightarrow$ We know that $x^3-1 = (x-1)(x^2+x+1)$ and $x^2+x+1 = (x + \frac{1}{2})^2 + \frac{3}{4}$. Notice that $(x + \frac{1}{2})^2$ cannot be negative because it is squared. Thus, $(x + \frac{1}{2})^2 + \frac{3}{4}$ has an inclusive lower bound of $\frac{3}{4}$. Now in order for $(x-1)(x^2+x+1) \gt 0$ to be true, $x-1 \gt 0$ must be true, as it is the product with a positive. Thus, $x^3 - 1$ implies $x \gt 1$.
+$\Rightarrow$ We know that $x^3-1 = (x-1)(x^2+x+1)$ and $x^2+x+1 = (x + \frac{1}{2})^2 + \frac{3}{4}$. Notice that $(x + \frac{1}{2})^2$ cannot be negative because it is squared. Thus, $(x + \frac{1}{2})^2 + \frac{3}{4}$ has an inclusive lower bound of $\frac{3}{4}$. Now  $(x-1)(x^2+x+1) \gt 0$ is only true, $x-1 \gt 0$ when is true, and they are both false otherwise. Thus, $x^3 - 1$ implies $x \gt 1$.
 
 $\Leftarrow$ Assume that $x \gt 1$. Cube both sides of the inequality, then subtract $1$ from both sides to get $x^3 - 1 \gt 0$. Thus, $x^3 - 1 > 0 \Leftarrow x \gt 1$. 
 
 We have shown both $x^3 - 1 > 0 \Rightarrow x \gt 1$ and  $x^3 - 1 > 0 \Leftarrow x \gt 1$. Therefore, by **Theorem 3.12** $x^3 - 1 > 0 \iff x \gt 1$. 
-
-$\blacksquare$
-
-<div style="break-after: page;"></div>
-
-
-*Proof*.
-
-Assume $x \in \R$. We use $x^3 - 1 > 0$ to state the inequality $x^3 > 1$, which has two possibilities for $x$. Either $x \leq 1$ or $x \gt 1$. 
-
-First assume that $x \leq 1$. If $x = 0, 1$, then $x^3 = 0, 1$, which makes the stated inequality false. Then, $x$ can either be a decimal in the range $(0, 1)$ or a negative number. If $x$ is a decimal, then $x^3$ cannot exceed $1$ as multiplication by a number in the range $0, 1$ cannot increase the function. If $x$ is negative, then $x^3$ is negative. So in both cases, the stated inequality is false. Therefore, the $x^3 > 1$ is false for all $x \leq 1$.
-
-Now assume that $x \gt 1$. Observe that the above cases are the only cases where $x^3 \leq x$. Thus, for $x \gt 1$, then $x^3 \gt x \gt 1$. So the stated inequality is true when $x \gt 1$. 
-
-Since $x^3 \gt 1$ is true exactly when $x \gt 1$ and no other case, by **Def 3.3**, $x^3 \gt 1 \iff x \gt 1$. Therefore, $x^3 - 1 > 0 \iff x \gt 1$. 
 
 $\blacksquare$
 
