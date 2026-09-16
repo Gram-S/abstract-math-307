@@ -14,8 +14,9 @@ $\Leftarrow$ Assume that $x \gt 1$. Cube both sides of the inequality, then subt
 
 We have shown both $x^3 - 1 > 0 \Rightarrow x \gt 1$ and  $x^3 - 1 > 0 \Leftarrow x \gt 1$. Therefore, by **Theorem 3.12** $x^3 - 1 > 0 \iff x \gt 1$. 
 
+$\blacksquare$
 
-
+<div style="break-after: page;"></div>
 
 
 *Proof*.
