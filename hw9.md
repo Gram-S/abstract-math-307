@@ -16,17 +16,6 @@ Now assume that $x \gt 1$. Observe that the above cases are the only cases where
 
 Since $x^3 \gt 1$ is true exactly when $x \gt 1$ and no other case, by **Def 3.3**, $x^3 \gt 1 \iff x \gt 1$. Therefore, $x^3 - 1 > 0 \iff x \gt 1$. 
 
-
-*Assume $x \in \R$. Then $x^3 - 1 > 0 \iff x \gt 1$.*
-
-*Proof.*
-
-Assume $x \in \R$. 
-
-$\RightArrow$ Assume $x^3 - 1 \gt 0$. Then, $x^3 \gt 1$. Now, we show that $x^3 \gt 1 \iff x \not= 0, 1$ because $x^3 \gt 1$ is false exactly when $x = 0, 1$. Then we show $x^3 \gt 1 \iff x \lt 1$ because $x^3$ would be a decreasing function for such values of $x$. 
-
-$\LeftArrow$ Assume $x \gt 1$. Now we can cube each side and subtract $1$ from each side. Thus, $x^3 - 1 \gt 0$. 
-
 $\blacksquare$
 
 <div style="break-after: page;"></div>
