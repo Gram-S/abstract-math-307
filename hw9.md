@@ -25,17 +25,19 @@ $\blacksquare$
 
 *Proof.*
 
-*Assume $x \in \R$.*
+Assume $x \in \R$.
 
 <!-- Need to use 'if' instead of the arrow this time. -->
 
-First we show that $(x^2 = x) \implies (x = 0 \text{ or } x = 1)$. Assume $x \in \R$. Now there are two cases, $x = 0$ and $x \not= 0$. 
+$( \implies )$ Assume $x^2 = x$. Now there are two cases, $x = 0$ and $x \not= 0$. 
 
-Let $x = 0$. Then $0^2 = 0$ is true, so $(x^2 = x) \implies (x = 0)$ is also true assuming $x$ can only be $0$. <!-- This works because it is ONLY for the case x = 0. It does not affect the other case. I believe this is if and only if too. -->
+In the case of $x = 0$, then $x^2 = x \implies x = 0$ is inherently true. 
 
-Let $x \in \R$ but $x \not= 0$, then we can divide each side of $x^2 = x$ by $x$. Then, $x = 1$, so $x^2 = x$ for some nonzero $x \in \R$, so $(x^2 = x) \implies (x = 1)$. 
+Now let $x \in \R$ but $x \not= 0$. Then we divide each side of $x^2 = x$ by $x$. Hence, $x = 1$. So $x^2 = x \implies x = 1$ whenever $x \in \R$ is nonzero. 
 
-Now, we show that $(x^2 = x) \impliedby (x = 0 \text{ or } x = 1)$. We have already showed this naively for $x = 0$ above, so just consider $x = 1$, then $1^2 = 1$, so $(x = 1) \implies (x^2 = x)$.
+Therefore, for both $x = 0$ and $x \not= 0$, then $(x^2 = x) \implies (x = 0 ) \text{ or } (x = 1)$. 
+
+$( \impliedby )$ Now, we show that $(x^2 = x) \impliedby (x = 0 \text{ or } x = 1)$. We have already showed this naively for $x = 0$ above, so just consider $x = 1$, then $1^2 = 1$, so $(x = 1) \implies (x^2 = x)$.
 
 We have now shown both $(x^2 = x) \impliedby (x = 0 \text{ or } x = 1)$ and $(x^2 = x) \implies (x = 0 \text{ or } x = 1)$ are true for $x \in \R$. Therefore, by *Theorem 3.12*, we have proved $ (x^2 = x) \iff (x = 0 \text{ or } x = 1)$. 
 
