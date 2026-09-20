@@ -1,4 +1,4 @@
-*""* <!-- Original claim -->
+<i>""</i> <!-- Original claim -->
 
 *Proof*.
 <!-- begin -->
