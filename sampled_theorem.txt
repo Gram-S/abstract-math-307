@@ -1,0 +1,10 @@
+### Theorem 3.41
+
+<i>"Assume $m, n \in \mathbb{Z}.$ Then $15m + 35n \not= 1$."</i>
+
+*Proof*.
+
+Assume that $m, n \in \mathbb{Z}$ but $15m + 35n = 1$ instead. Divide $5$ on each side of the equation to produce $3m + 7n = \frac{1}{5}$. However, by **Fact 2.3.2**, $3m + 7n$ must be an integer. Thus, assuming $15m + 35n = 1$ leads to a contradiction. Therefore, $15m + 35n \not= 1$ is true.
+
+$\blacksquare$
+
