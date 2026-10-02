@@ -1,5 +1,7 @@
 import itertools
 import math
+import pandas as pd
+from sympy import isprime
 
 my_list = [2, 3, 5]
 all_combinations = []
@@ -9,7 +11,9 @@ for r in range(1, len(my_list) + 2):
     combinations_object = itertools.combinations_with_replacement(my_list, r)
     all_combinations.extend(combinations_object)
 
-all_combinations.sort(key=math.prod)
+df = pd.DataFrame({"Inputs":all_combinations})
 
-for i in all_combinations:
-    print(i, '->', math.prod(i))
+df['Product'] = df["Inputs"].map(lambda x: math.prod(x))
+df['Product+1_is_prime'] = df["Product"].map(lambda z: isprime(z+1))
+
+print(df)
