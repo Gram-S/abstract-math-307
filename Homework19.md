@@ -14,7 +14,7 @@ No. $|\emptyset| = 0$. But the $|\set{\emptyset}| = 1$.
 
 *Proof.*
 
-Assume that $B, C$ are sets. Also assume that $B \subseteq C$ and  $A \subseteq B$. Note that, by Definition **5.6**, every element of $B$ is also an element of $C$. Then the set $A$ can only contain elements of $C$. Thus, $A \subseteq C$.
+Assume that $B, C$ are sets. Also assume that $B \subseteq C$ and $A \subseteq B$. Note that, by Definition **5.6**, every element of $B$ is also an element of $C$. Then the set $A$ can only contain elements of $C$. Thus, $A \subseteq C$.
 
 $\blacksquare$
 
@@ -34,7 +34,7 @@ $\blacksquare$
 
 **(e)** $(A \cup B)^c = A^c$
 
-**(f)** $A^c \cap B^c = \set{6, 7, 8, 9, 10}$
+**(f)** $A^c \cap B^c = \set{6, 7, 8, 9, 10}$.
 
 --- 
 
@@ -42,11 +42,11 @@ $\blacksquare$
 
 *Suppose that the universe of discourse is $U = \mathbb{R}$. Let $A = [-3,-1), B = (-2.5, 2), \text{ and } C = (-2, 0]$. Find each of the following.*
 
-**(a)** $A^c = \set{x \in \mathbb{R} : x < -3 \text{ or } x \geq -1}$.
+**(a)** $A^c = \set{x \in \mathbb{R} : x < -3 \text{ or } x \geq -1}$ or $(-\infty, -3) \cup [-1, \infty)$.
 
 **(b)** $A \cap B = \set{x \in \mathbb{R} : -2.5 < x < -1}$.
 
-**(c)** $A \cup B = \set{x \in \mathbb{R} : -3 \leq x \leq 2}$.
+**(c)** $A \cup B = \set{x \in \mathbb{R} : -3 \leq x < 2}$.
 
 **(d)** $(A \cap B)^c = \set{x \in \mathbb{R} : x \notin (A \cap B)}$.
 
@@ -60,7 +60,9 @@ $\blacksquare$
 
 Let $A$ and $B$ be sets. If $A \subseteq B$, then $B^c \subseteq A^c$.
 
-Assume we have two sets, $A$ and $B$. We then use proof by contrapositive. Thus we assume $B^c \not\subseteq A^c$. By Definition **5.6**, there exists $x \in B^c : x \not\in A^c$. Definition **5.14** then tells us that $x$ is in $A$ but not in $B$. Thus, $A \not\subseteq B$. Thus, if $B^c \not\subseteq A^c$, then $A \not\subseteq B$. Therefore, Theorem **3.34** implies if $A \subseteq B$, then $B^c \subseteq A^c$. 
+Assume we have two sets, $A$ and $B$. We then use proof by contrapositive. Thus we assume $B^c \not\subseteq A^c$. By Definition **5.6**, there exists $x \in B^c$ such that $x \not\in A^c$. Definition **5.14** then tells us that $x$ is in $A$ but not in $B$. Hence, $A \not\subseteq B$. Thus, if $B^c \not\subseteq A^c$, then $A \not\subseteq B$. Therefore, Theorem **3.34** implies if $A \subseteq B$, then $B^c \subseteq A^c$. 
+
+$\blacksquare$
 
 ---
 

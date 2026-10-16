@@ -4,12 +4,14 @@ Grant Smith, Connor Flannagan
 
 *Are $\emptyset$ and \set{\emptyset} the same?*
 
+No. $|\emptyset| = 0$. But the $|\set{\emptyset}|$ is $1$.
 
 ---
 
 ### Theorem 5.11
 
 *Suppose that $A, B$, and $C$ are sets. If $A \subseteq B$ and $B \subseteq C$, then $A \subseteq C$.*
+
 
 ---
 
