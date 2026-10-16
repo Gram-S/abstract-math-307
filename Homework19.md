@@ -2,7 +2,7 @@ Grant Smith, Connor Flannagan
 
 ### Exercise 5.10
 
-*Are $\emptyset$ and \set{\emptyset} the same?*
+*Are $\emptyset$ and $\set{\emptyset}$ the same?*
 
 No. $|\emptyset| = 0$. But the $|\set{\emptyset}| = 1$.
 
@@ -60,7 +60,7 @@ $\blacksquare$
 
 Let $A$ and $B$ be sets. If $A \subseteq B$, then $B^c \subseteq A^c$.
 
-Assume $A$ and $B$ are sets with a universe of discourse $U$. Also assume $A \subseteq B$. Let there $\exists x : x \notin B$. By Definition **5.6**, then $x \notin A$ as well. Thus, $x \in A^c$ and $x \in B^c$. Therefore, 
+Assume we have two sets, $A$ and $B$. We then use proof by contrapositive. Thus we assume $B^c \not\subseteq A^c$. By Definition **5.6**, there exists $x \in B^c : x \not\in A^c$. Definition **5.14** then tells us that $x$ is in $A$ but not in $B$. Thus, $A \not\subseteq B$. Thus, if $B^c \not\subseteq A^c$, then $A \not\subseteq B$. Therefore, Theorem **3.34** implies if $A \subseteq B$, then $B^c \subseteq A^c$. 
 
 ---
 
