@@ -9,19 +9,17 @@
 
 >! *Proof*
 >
->$\blacksquare$
+>! $\blacksquare$
 
-**b.** $\{\theta, r \in \mathbb{R} : 0 \leq \theta \leq 2\pi : \sin^{2}\left(\theta\right)+\cos^{2}\left(\theta\right)=r\} = \{x, y \in \mathbb{R} : x^2 + y^2 = 1\}$.
+**b.** $\{p \in \mathbb{R} : p^3 - 1 < 0 \} = \{p \in \mathbb{R} : p < 0\}$.
 
-**c.** $\{p \in \mathbb{R} : p^3 - 1 < 0 \} = \{p \in \mathbb{R} : p < 0\}$.
+**c.** $\{2n - 2 : n \in \mathbb{Z}\} = \{2k : k \in \mathbb{Z}\}$.
 
-**d.** $\{2n - 2 : n \in \mathbb{Z}\} = \{2k : k \in \mathbb{Z}\}$.
+**d.** Given the set of positive odd integers $P$ and the set of negative odd integers $N$. Prove $\{2z - 1 : z \in \mathbb{Z}\} = P \cup N.$
 
-**e.** Given the set of positive odd integers $P$ and the set of negative odd integers $N$. Prove $\{2z - 1 : z \in \mathbb{Z}\} = P \cup N.$
+**e.** $\{x \in \mathbb{R} : -1 \leq x \leq 1\} = \{sin(x) : x \in \mathbb{R}\}$.
 
-**f.** $\{x \in \mathbb{R} : -1 \leq x \leq 1\} = \{sin(x) : x \in \mathbb{R}\}$.
-
-**g.** $\mathbb{N} = \mathbb{Z}^+ \setminus \mathbb{Z}^-$.
+**f.** $\mathbb{N} = \mathbb{Z}^+ \setminus \mathbb{Z}^-$.
 
 2. Given sets $A$, $B$, and $C$ in the same universe, prove the following.
 
