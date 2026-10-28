@@ -7,10 +7,6 @@
 
 **a.** $\{-1, 1\} = \{(-1)^n : n \in \mathbb{N}\}$.
 
->! *Proof*
->
->! $\blacksquare$
-
 **b.** $\{p \in \mathbb{R} : p^3 - 1 < 0 \} = \{p \in \mathbb{R} : p < 0\}$.
 
 **c.** $\{2n - 2 : n \in \mathbb{Z}\} = \{2k : k \in \mathbb{Z}\}$.
@@ -26,6 +22,8 @@
 **a.** $A \Delta B \Delta C = (A \cup B \cup C) \setminus (A \cap B \cap C)$.
 
 **b.** If $C \subseteq A$, then $C \subseteq (A \setminus B) \cup (B \cap C)$.
+
+**c.** $A \cap B = \emptyset \iff A \setminus B = A$.
 
 ### Powersets
 
