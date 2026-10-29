@@ -28,3 +28,5 @@
 ### Powersets
 
 1. Since the powerset is a set, we can take the powerset of a powerset. Given $x = \{1\}$, what is $\mathcal{P}(\mathcal{P}(x))$?
+
+2. Theorem. For a set $S$, if $\emptyset \not\in S$, then for some arbitrary $x \in S$, then $x \not\in \mathcal{P}(S)$.
