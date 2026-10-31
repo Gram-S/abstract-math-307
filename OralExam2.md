@@ -4,7 +4,7 @@ We claim the statement are not equivalent.
 
 *Proof.*
 
-Since the statements are arbitrary, consider $P(x) = \lnot Q(x)$. We then use proof by contradiction, so assume the original statements are equivalent. Then the **definition of equivalent statements** tells us $(\exists x \in \mathbb{R} : P(x)) \land (\exists x \in \mathbb{R} : Q(x)) \implies \exists x \in \mathbb{R} : P(x) \land Q(x)$. So assume $(\exists x \in \mathbb{R} : P(x)) \land (\exists x \in \mathbb{R} : Q(x))$, now $\exists x \in \mathbb{R} : \lnot Q(x) \land Q(x)$. But the **definition of negation** tells us $\lnot Q(x) \land Q(x)$ is false for all $x$. Thus, $(\exists x \in \mathbb{R} : P(x)) \land (\exists x \in \mathbb{R} : Q(x)) \not\implies \exists x \in \mathbb{R} : P(x) \land Q(x)$, which is a contradiction. Therefore, the original statements are not equivalent.
+Since the statements are arbitrary, consider the case where $P(x) = \lnot Q(x)$. We then use proof by contradiction, so assume the original statements are equivalent. Then the **definition of equivalent statements** tells us $(\exists x \in \mathbb{R} : P(x)) \land (\exists x \in \mathbb{R} : Q(x)) \implies \exists x \in \mathbb{R} : P(x) \land Q(x)$. So assume $(\exists x \in \mathbb{R} : P(x)) \land (\exists x \in \mathbb{R} : Q(x))$, now $\exists x \in \mathbb{R} : \lnot Q(x) \land Q(x)$. But the **definition of negation** tells us $\lnot Q(x) \land Q(x)$ is false for all $x$. Thus, $(\exists x \in \mathbb{R} : P(x)) \land (\exists x \in \mathbb{R} : Q(x)) \not\implies \exists x \in \mathbb{R} : P(x) \land Q(x)$, which is a contradiction. Therefore, the original statements are not equivalent.
 
 $\blacksquare$
 
@@ -14,7 +14,7 @@ $\blacksquare$
 
 Denote $S = A \setminus (B \cup C)$ and $T = (A \setminus B) \cap (A \setminus C)$.
 
-$(S \subseteq T)$ Let $x \in S$ be arbitrary. By the **Def. of Set Minus**, we know $x \in A$ and $x \not\in (B \cup C)$. By the **Negated Def. of Union**, we then know $x \not\in B$ and $x \not\in C$. Now, we know $x \in (A \setminus B), (A \setminus C)$. Thus, the **Def. of Intersection** implies $x \in T$. Since $x \in S$ was arbitrary, we conclude $S \subseteq T$.
+$(S \subseteq T)$ Let $x \in S$ be arbitrary. By the **Def. of Set Minus**, we know $x \in A$ and $x \not\in (B \cup C)$. The **definition of union** implies that $x \in B \cup C$ if $x \in B$ or $C$. So for $x$ to not be in the union, then $x \not\in B, C$. Now, we know $x \in (A \setminus B), (A \setminus C)$. Thus, the **Def. of Intersection** implies $x \in T$. Since $x \in S$ was arbitrary, we conclude $S \subseteq T$.
 
 $(S \supseteq T)$ Let $x \in T$ be arbitrary. By the **Def. of Intersection**, we know $x \in (A \setminus B), (A \setminus C)$. Then, the **Def. of Set Minus** implies $x \in A$ and $x \not\in B, C$. By the **Def. of Union**, then $x \not\in (B \cup C)$. Thus, $x \in S$. Since $x \in T$ was arbitrary, we conclude $S \supseteq T$.
 
