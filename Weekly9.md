@@ -1,0 +1,48 @@
+# Theorem 6.5
+
+For all real number $r \not= 1$. For any $n \in \mathbb{N}$,
+
+$$1 + r + r^2 + ... + r^n = \frac{1-r^{n+1}}{1-r}.$$
+*Proof.*
+
+We proceed by induction, so there are two cases for $n$. 
+
+*(i).* Consider when $n = 1$. Now $1 + r = \frac{1-r^2}{1-r} = 1 + r$. So, our original statement is true for all $r \not= 1$ when $n = 1$. 
+
+*(ii).* Assume there exists some arbitrary $n \in N$ such that our original statement is true. Now, consider 
+
+$$(1 + r + r^2 + ... + r^n) + r^{n + 1}.$$
+By our assumption, we know
+
+$$\frac{1 - r^{n+1}}{1-r} + r^{n+1} = \frac{1 - r^{n+1}}{1-r} + \frac{r^{n+1}(1-r)}{1-r}
+= \frac{1 - r^{n+1}}{1-r} + \frac{r^{n+1}-r^{n+2}}{1-r}
+=\frac{1 - r^{n+2}}{1-r}.
+$$
+
+Therefore, $1 + r + r^2 + ... + r^{n+1} = \frac{1-r^{n+2}}{1-r}$ is true whenever $1 + r + r^2 + ... + r^n = \frac{1-r^{n+1}}{1-r}$ is true. 
+
+Thus, by the PMI, our original statement is true for all $n \in \mathbb{N}$.
+
+$\blacksquare$
+
+---
+
+# Theorem 6.7
+
+For all $n \in \mathbb{N}$, then P(n) := "then 3 divides $4^n - 1$".
+
+*Proof.*
+
+We proceed by induction, so there are two cases for $n$. 
+
+*(i).* Consider when $n = 1$. Then, $3|3$. We know any number divides itself. Therefore, our original statement is true when $n = 1$.
+
+*(ii).* Assume there exists some arbitrary $n \in N$ such that 3 divides $4^n - 1$. Now consider $4^{n+1} - 1$. We then know
+
+$$4^{n+1} - 1 = 4(4^n) - 1 = 4^n + 4^n + 4^n + (4^n - 1) = 3(4^n) + (4^n - 1).$$
+
+Observe that **Theorem 2.15** implies 3 divides $3|3(4^n)$. Subsequently, by our assumption, we know 3 divides $4^n - 1$. Thus, **Theorem 2.18** implies $3|(4^{n+1} - 1)$. Therefore, 3 divides $4^{n+1} - 1$ whenever 3 divides $4^n - 1$. 
+
+Now, by the PMI, for all $n \in \mathbb{N}$, then 3 divides $4^n - 1$.
+
+$\blacksquare$
