@@ -51,7 +51,7 @@ We use proof by contradiction, so assume ($P(a..k) \implies P(k+1)$), but $(\exi
 
 We know that $P(a)$ is true. We also know that $P(k) \implies P(k+1)$ for some integer $k \geq a$. Thus, by the GPMI, $P(n)$ is true for all $n \geq a$, which is a contradiction. 
 
-Thus, the statement ($P(a..k) \implies P(k+1)$) $\implies$ $(\forall n \geq a)P(n).$
+Thus, the statement $[P(a..k) \implies P(k+1)] \implies$ $(\forall n \geq a)P(n).$
 
 $\blacksquare$
 
