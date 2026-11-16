@@ -19,9 +19,9 @@ $$
 \end{align}
 $$
 
-Recall that Fact 2.3 tells us $(9k + 3^n \cdot 15)$ is an integer. Now, Theorem 2.15 implies $4$ divides $4(9k + 3^n \cdot 15)$. Therefore, $4$ divides $2 \cdot 9^{n+1} - 10 \cdot 3^{n+1}$ only when $4$ divides $2 \cdot 9^{n} - 10 \cdot 3^{n}$. 
+Recall that Fact 2.3 tells us $(9k + 3^n \cdot 15)$ is an integer. Now, Theorem 2.15 implies $4$ divides $4(9k + 3^n \cdot 15)$. Therefore, $4$ divides $2 \cdot 9^{n+1} - 10 \cdot 3^{n+1}$ whenever $4$ divides $2 \cdot 9^{n} - 10 \cdot 3^{n}$. 
 
-Thus, by the PMI, $4$ divides $2 \cdot 9^{n} - 10 \cdot 3^{n}$ for all integers $n \geq 2$. 
+Thus, by the GPMI, $4$ divides $2 \cdot 9^{n} - 10 \cdot 3^{n}$ for all integers $n \geq 2$. 
 
 $\blacksquare$
 
@@ -37,9 +37,9 @@ We proceed by induction.
 
 *Base Case.* Let $n = 0$. Now $1 + 0 \leq \sum^{2^0}_{k=1} \frac{1}{k}$. Then, the summation is $1$. So our original statement holds when $n = 0$.
 
-*Inductive Case.* Assume that there exists some arbitrary integer, $n \geq 0$ such that our original statement is true. Now consider $\sum^{2^{n+1}}_{k=1} \frac{1}{k} = \sum^{2^n}_{k=1} (\frac{1}{k}) + \frac{1}{2^{n+1}}.$ Our assumption tells us the summation bounded by $2^n$ is greater than or equal to $1 + \frac{n}{2}$. Then, observe that $\frac{1}{2^{n+1}}$ is greater than or equal to $\frac{1}{2}$. Thus, $\sum^{2^n}_{k=1} (\frac{1}{k}) + \frac{1}{2^{n+1}} \geq (1 + \frac{n}{2}) + \frac{1}{2}$ is true only when our assumption is true.
+*Inductive Case.* Assume there exists some arbitrary integer $n \geq 0$ such that $1 + \frac{n}{2} \leq \sum^{2^n}_{k=1} \frac{1}{k}.$ Now consider $\sum^{2^{n+1}}_{k=1} \frac{1}{k} = \sum^{2^n}_{k=1} \frac{1}{k} + \sum^{2^{n+1}}_{k=2^n+1} \frac{1}{k}.$ Note that the minimum term of the sum of $2^n+1$ to $2^{n+1}$ is $\frac{1}{2^{n}+1}$. Then, we know that for the smallest value, $n = 0$, makes this term $\frac{1}{2}.$ Hence, the total sum must always be equal to or greater than $\frac{1}{2}.$ Subsequently, by the inductive hypothesis, we know $\sum^{2^n}_{k=1} \frac{1}{k} \geq 1 + \frac{n}{2}.$ Thus, $\sum^{2^n}_{k=1} \frac{1}{k} + \sum^{2^{n+1}}_{k=2^n+1} \frac{1}{k} \geq (1 + \frac{n}{2}) + \frac{1}{2}$ is true whenever $1 + \frac{n}{2} \leq \sum^{2^n}_{k=1} \frac{1}{k}$ is true. 
 
-By the PMI, we conclude for all integers $n \geq 0$, then $1 + \frac{n}{2} \leq \sum^{2^n}_{k=1} \frac{1}{k}$.
+Now, by the GPMI, $1 + \frac{n}{2} \leq \sum^{2^n}_{k=1} \frac{1}{k}$ is true for all $n \geq 0$.
 
 $\blacksquare$
 
@@ -47,11 +47,15 @@ $\blacksquare$
 
 # Theorem 6.22
 
-We use proof by contradiction, so assume ($P(a..k) \implies P(k+1)$), but $(\exists n \geq a)$ such that $\lnot P(n)$.
+*Proof.*
 
-We know that $P(a)$ is true. We also know that $P(k) \implies P(k+1)$ for some integer $k \geq a$. Thus, by the GPMI, $P(n)$ is true for all $n \geq a$, which is a contradiction. 
+Assume we have a sequence of statements $P(a), P(a+1), P(a + 2), ...$ for some integer $a$. Let $Q(n)$ be the statement $P(j)$ is true for all integers $a \geq j \geq n.$ We proceed by Weak Induction.
 
-Thus, the statement $[P(a..k) \implies P(k+1)] \implies$ $(\forall n \geq a)P(n).$
+*Base Step.* Let $n = a$. By assumption, we know $P(a)$ is true. Therefore, $Q(a)$ is true.
+
+*Inductive Step.* Let $n\ge a$ be an integer, and assume $Q(n)$ is true. Thus, $P(j)$ is true for all integers $j$ satisfying $a\le j\le n$. By our assumption, $P(n+1)$ is true. The inductive hypothesis already gives $P(j)$ for every integer from $a$ through $n$. Therefore, $P(j)$ is true for all integers $j$ satisfying $a\le j\le n+1$. Thus, $Q(n+1)$ is true whenever $Q(n)$ is true. By Axiom 6.16, $Q(n)$ is true for all integers $n\ge a$. Since $Q(n)$ implies $P(n)$, $P(n)$ is true for all integers $n\ge a$. 
+
+Therefore, by the PMI, the Complete Induction theorem is true. 
 
 $\blacksquare$
 
