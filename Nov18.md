@@ -20,9 +20,10 @@ $$
 2^1 - 1 = 1 = a_1 \\
 2^2 - 1 = 3 = a_2.
 $$
-So, our original statement is true for $n = 1, 2$. 
 
-*Inductive Case.* Let $k \in \mathbb{N}$ with $k \geq 3$. Suppose that, for all $j \in \mathbb{Z}$ such that $3 \leq j \leq k$, then $a_j = 2^j - 1$. Let $k' = k - 1$. Now consider $a_{k+1} = 3a_k - 2a_{k'}$. Then, our inductive hypothesis with $j = k, k-1$ implies $3(2^k - 1) - 2(2^{k'}-1)$, then
+So, our original statement is true when $n = 1, 2$. 
+
+*Inductive Case.* Let $k \in \mathbb{N}$ with $k \geq 3$. Suppose that, for all $j \in \mathbb{Z}$ such that $3 \leq j \leq k$, then $a_j = 2^j - 1$. Let $k' = k - 1$. Now consider $a_{k+1} = 3a_k - 2a_{k'}$. Then, our inductive hypothesis with $j = k, (k-1)$ tells us  $a_{k+1} = 3(2^k - 1) - 2(2^{k'}-1)$, then
 
 $$
 \begin{align}
@@ -50,13 +51,14 @@ Define a sequence of numbers by $a_1 = 1$, $a_2 = 2$, $a_3 = 3$ and $a_n = a_{n-
 *Base Case.* Consider when $n = 1,2,3$. Then observe, 
 
 $$
-1 \leq 2^1 \\
-2 \leq 2^2 \\
-3 \leq 2^3.
+1 \lt 2^1 \\
+2 \lt 2^2 \\
+3 \lt 2^3.
 $$
+
 So our original statement is true for $n = 1,2,3$. 
 
-*Inductive Case.* Let $k \in \mathbb{N}$ with $k \geq 4$. Suppose that, for all $j \in \mathbb{Z}$ such that $4 \geq j \geq k$, then $a_j \lt 2^j$. Now consider $a_{k+1} = a_k + a_{k-1} + a_{k-2}$. By our inductive hypothesis, we know that $a_{k+1}$ is less than $2^k + 2^{k-1} + 2^{k-2}$. Then,
+*Inductive Case.* Let $k \in \mathbb{N}$ with $k \geq 4$. Suppose that, for all $j \in \mathbb{Z}$ such that $4 \geq j \geq k$, then $a_j \lt 2^j$. Now consider $a_{k+1} = a_k + a_{k-1} + a_{k-2}$. Using our inductive hypothesis for $j = k, (k-1), (k-2)$, then we know that $2^k + 2^{k-1} + 2^{k-2}$ is greater than the respective terms in the sum of $a_{k+1}$. Then,
 
 $$
 \begin{align}
@@ -64,6 +66,7 @@ $$
 &= 2^{k-2}(7).
 \end{align}
 $$
+
 We then know $2^{k-2}(7) \lt 2^{k-2}(2^3)$. Therefore, $a_{k+1} \lt 2^{k+1}$ is true whenever $a_j \leq 2^j$.
 
 Thus, by the PCMI, then our original statement is true for all $n \in \mathbb{N}$.
@@ -87,6 +90,7 @@ $$
 15 = 5 + 5 + 5 \\
 16 = 4 + 4 + 4 + 4.
 $$
+
 So our original statement is true for $12, 13, 14, 15$ and $16$ cents.
 
 *Inductive Case.* Let $k \geq 17$ be a natural number. For some $j \in \mathbb{Z}$ such that $17 \geq j \geq k$, suppose that we can make a postage of $j$ cents using $4$-cent and $5$-cent stamps. Now, for a postage that is $j+1$ cents, there are two cases. 
