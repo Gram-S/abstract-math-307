@@ -46,7 +46,7 @@ $\blacksquare$
 
 Define a sequence of numbers by $a_1 = 1$, $a_2 = 2$, $a_3 = 3$ and $a_n = a_{n-1} + a_{n-2} + a_{n-3}$ for all natural numbers $n \geq 4$. Then $a_n < 2^n$ for all $n \in \mathbb{N}$.
 
-*Proof.* We proceed by induction. 
+*Proof.* We proceed by induction.
 
 *Base Case.* Consider when $n = 1,2,3$. Then observe, 
 
@@ -58,7 +58,7 @@ $$
 
 So our original statement is true for $n = 1,2,3$. 
 
-*Inductive Case.* Let $k \in \mathbb{N}$ with $k \geq 4$. Suppose that, for all $j \in \mathbb{Z}$ such that $4 \geq j \geq k$, then $a_j \lt 2^j$. Now consider $a_{k+1} = a_k + a_{k-1} + a_{k-2}$. Using our inductive hypothesis for $j = k, (k-1), (k-2)$, then we know that $2^k + 2^{k-1} + 2^{k-2}$ is greater than the respective terms in the sum of $a_{k+1}$. Then,
+*Inductive Case.* Let $k \in \mathbb{N}$ with $k \geq 3$. Suppose that, for all $j \in \mathbb{Z}$ such that $3 \leq j \leq k$, then $a_j \lt 2^j$. Since $a_{k+1} \geq 4$, then $a_{k+1} = a_k + a_{k-1} + a_{k-2}$. Using our inductive hypothesis for $j = k, (k-1), (k-2)$, then we know each term in $2^k + 2^{k-1} + 2^{k-2}$ is greater than their respective terms in the sum of $a_{k+1}$. Then,
 
 $$
 \begin{align}
@@ -67,7 +67,7 @@ $$
 \end{align}
 $$
 
-We then know $2^{k-2}(7) \lt 2^{k-2}(2^3)$. Therefore, $a_{k+1} \lt 2^{k+1}$ is true whenever $a_j \leq 2^j$.
+We then know $2^{k-2}(7) \lt 2^{k-2}(2^3)$. Therefore, $a_{k+1} \lt 2^{k+1}$ is true whenever $a_j \leq 2^j$ for any $3 \leq j \leq k$.
 
 Thus, by the PCMI, then our original statement is true for all $n \in \mathbb{N}$.
 
@@ -77,28 +77,22 @@ $\blacksquare$
 
 # Theorem 6.28
 
-Every amount of postage that is at least $12$ cents can be made from $4$-cent and $5$-cent stamps.
+Every amount of $n$-postage for $n \in \mathbb{N}$ that is at least $12$ cents can be made from $4$-cent and $5$-cent stamps.
 
 *Proof.* We proceed by induction. 
 
-*Base Case.* Consider postage that costs $12, 13, 14, 15$ and $16$ cents. Then, 
+*Base Case.* Consider postage that costs $12, 13, 14$ and $15$ cents. Then, 
 
 $$
 12 = 4 + 4 + 4 \\
 13 = 5 + 4 + 4 \\
 14 = 5 + 5 + 4 \\
-15 = 5 + 5 + 5 \\
-16 = 4 + 4 + 4 + 4.
+15 = 5 + 5 + 5.
 $$
 
-So our original statement is true for $12, 13, 14, 15$ and $16$ cents.
+So our original statement is true for $12, 13, 14$ and $15$ cents.
 
-*Inductive Case.* Let $k \geq 17$ be a natural number. For some $j \in \mathbb{Z}$ such that $17 \geq j \geq k$, suppose that we can make a postage of $j$ cents using $4$-cent and $5$-cent stamps. Now, for a postage that is $j+1$ cents, there are two cases. 
-
-1. We start with a $4$-cent stamp. Then our inductive hypothesis implies we can make the remaining $j-3$ postage from $4$ and $5$ cent stamps. 
-2. We start with a $5$-cent stamp. Then our we can make the remaining $j-4$ postage from $4$ and $5$ cent stamps. 
-
-Thus, we can make $j+1$ postage with $4$ and $5$ cent stamps whenever we can make $j$ postage with $4$ and $5$ cent stamps for $j \in \mathbb{Z}$ such that $17 \leq j \leq k$.
+*Inductive Case.* Let $k \geq 15$ be a natural number. For all $j \in \mathbb{Z}$ such that $12 \leq j \leq k$, suppose that we can make a postage of $k$ cents using $4$-cent and $5$-cent stamps. Now, for a postage that is $k+1$ cents, we know we can make a postage of $k- 3$ cents with the desired condition because of our inductive hypothesis. Then, we can add a $4$-cent stamp to make $k+1$ postage. 
 
 Therefore, by the PCMI, we can make every amount of postage that is at least $12$ cents from $4$ and $5$ cent stamps. 
 

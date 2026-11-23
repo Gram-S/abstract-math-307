@@ -1,4 +1,4 @@
-# Theorem 6.20
+ # Theorem 6.20
 
 For all integers $n \geq 2$, then $(2)9^n − (10)3^n$ is divisible by $4$.
 

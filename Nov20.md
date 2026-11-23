@@ -1,10 +1,10 @@
 
 # Exercise 7.4
 
-1. Let $S = \mathbb{Z}$ and $a, b \in S$. Let there be an arbitrary relation $N$. Then let $a$ be $R$-related to $b$ if $a$ is not $N$-related to $b$.
+1. Let $S = \mathbb{Z}$ and $a, b \in S$. Let there be an arbitrary relation $N$. Then let $a$ be $R$-related to $b$, if and only if, $a$ is not $N$-related to $b$.
 2. Let the universe of $S$ be the set of English words. Consider the anagram relation on $S$, which is given by, $a$ is a anagram of $b$, if and only if, $a$ contains the same letters, in the same quantities, as $b$. 
-3. Let the universe of $S$ be the set of mathematicians. Consider the $P$ (Pythagoreas) relation on $S$, which is given by $aPb$, if and only if, both $a$ and $b$ owned a cult (like Pythagoreas).
-4.  Let the universe of $S$ be the human proteome. Consider the following relation "=" on $S$, for proteins $a$ and $b$, given by $a = b$, if and only if, $a$ and $b$ are modifications of the same protein. 
+3. Let the universe of $S$ be the set of mathematicians. Consider the $P$ (Pythagoreas) relation on $S$, which is given by $aPb$, if and only if, $a$ is a member of a cult which $b$ owns (such Pythagoreas').
+4.  Let $S=\mathbb{N}$. Define $xR_1y\iff x\le y$.
 
 # Exercise 7.7
 
@@ -20,9 +20,10 @@ We know, for all integers $i$, then $|i - i| = 0$.
 Since addition is transitive, the sum is the same no matter if $xRy$ or $yRx$.
 Consider $1R2$ and $2R3$, but $|1 - 3| = 2$. So $1R2$ and $2R3$ is satisfied but $1R3$ is not.  
 
-3. No.
+3. Consider the "Null Relation" on some arbitrary $S$. Define the null relation such that for any $a, b \in S$, then $a \not R b$.
 
-*Proof.* Let $S$ be an arbitrary set. We proceed by proof by contradiction, so assume, for some arbitrary $x, y \in S$ that $xRy$ such that $R$ is symmetric and transitive but not reflexive. Recall that definition of a symmetric relation implies $yRx$. Then, since $xRy$ and $yRx$, the definition of a transitive relation implies $xRx$. Since $x$ and $y$ are arbitrary, this is true for all $xRy$. Therefore, assuming $R$ exists is a contradiction. 
+It cannot be reflexive, since $x \not R x$.
+It must be symmetric, because there is no case where $xRy$ is satisfied and $yRx$ is not (because there is no case for $xRy$). It must also be transitive for the same reason. 
 
 $\blacksquare$
 
